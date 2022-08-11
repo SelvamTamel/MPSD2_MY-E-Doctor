@@ -16,11 +16,10 @@ A mobile application which enable patients and doctors to communicate and seek h
 
 ## Features
 There are a few important basic features that are implemented into this project:
-<hr>  
+ 
 1 - Physical Appointment
-<hr>  
+ 
 2 - Virtual Appointment (used in RecyclerAdapter_Appt to display appointment state)
-<hr>  
   a - Pending doctor to accept appointment
   b - Accepted
   c - Declined
