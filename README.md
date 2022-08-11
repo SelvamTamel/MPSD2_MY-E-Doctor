@@ -50,9 +50,11 @@ There are a few important basic features that are implemented into this project:
 
 
 2) To debug the app, create a new account of use existing user
+### Patients:
 - Patient : liawyikai.lyk@gmail.com 
 - Password : 123456
 
+### Doctors:
 - Doctor : ben_lyk@live.com
 - Password : 123456
 
