@@ -20,14 +20,14 @@ There are a few important basic features that are implemented into this project:
 1 - Physical Appointment
  
 2 - Virtual Appointment (used in RecyclerAdapter_Appt to display appointment state) 
-  i- Pending doctor to accept appointment
-  ii- Accepted
-  iii- Declined
-  - Finished
-  e) - Confirmed Done
-  f) - Expired (expire if both party didn't join meeting after 1 hour from appointment time)
-  g) - After Clicking Join Meeting Button (Doctor)
-  h) - After Clicking Join Meeting Button (Patient)  
+  a) Pending doctor to accept appointment
+  b) Accepted
+  c) Declined
+  d) Finished
+  e) Confirmed Done
+  f) Expired (expire if both party didn't join meeting after 1 hour from appointment time)
+  g) After Clicking Join Meeting Button (Doctor)
+  h) After Clicking Join Meeting Button (Patient)  
 
 ### Doctors:
 - Register
