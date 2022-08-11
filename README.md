@@ -20,7 +20,8 @@ There are a few important basic features that are implemented into this project:
 1 - Physical Appointment
  
 2 - Virtual Appointment (used in RecyclerAdapter_Appt to display appointment state) 
-  #a - Pending doctor to accept appointment
+  
+  a - Pending doctor to accept appointment
   b - Accepted
   c - Declined
   d - Finished
