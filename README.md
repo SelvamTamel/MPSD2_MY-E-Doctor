@@ -59,4 +59,3 @@ Password : 123456
 
 
 3) Sometimes the recycler view at "My Appointment" part is displaying duplicated data (if didnt refresh the page) is because our database is not optimized to the best. The solution to solve this problem is to implement a database table to store All Appointments, then retrieve display data from this table. In this project, we are retrieving data from different tables, virtual_appt & physical_appt, thus sometimes there is some displaying error, but the display will turn normal after refreshing the page. 
-
