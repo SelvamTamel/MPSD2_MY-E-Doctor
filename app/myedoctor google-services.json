@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "671114634645",
+    "firebase_url": "https://my-e-doctor-d3a77-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "my-e-doctor-d3a77",
+    "storage_bucket": "my-e-doctor-d3a77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671114634645:android:f7f6e794b3e0ea4289029c",
+        "android_client_info": {
+          "package_name": "com.example.medicalappv1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "671114634645-7fgh14oq1b6fitfidv56bvk1g3clhihk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.medicalappv1",
+            "certificate_hash": "49b561830036c98c63f7a302249ed12b43818df7"
+          }
+        },
+        {
+          "client_id": "671114634645-dmd74hdrd157fp8acd3n8a7i3hui7a97.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxYmDliIV6NbfqJDUGD8OhSvRqiJS8m3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "671114634645-dmd74hdrd157fp8acd3n8a7i3hui7a97.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671114634645:android:43c154efa08dd4fb89029c",
+        "android_client_info": {
+          "package_name": "com.example.myedoctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "671114634645-u600fdh1j4ftt5k5le10prvauiubnej6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myedoctor",
+            "certificate_hash": "49b561830036c98c63f7a302249ed12b43818df7"
+          }
+        },
+        {
+          "client_id": "671114634645-dmd74hdrd157fp8acd3n8a7i3hui7a97.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxYmDliIV6NbfqJDUGD8OhSvRqiJS8m3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "671114634645-dmd74hdrd157fp8acd3n8a7i3hui7a97.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

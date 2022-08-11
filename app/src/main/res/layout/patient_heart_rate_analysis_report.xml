@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Patient_dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <!--Back Button-->
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:background="#FFFFFF"
+            app:srcCompat="@drawable/back_icon" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="265dp"
+            android:layout_height="152dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/heart_rate_icon" />
+
+        <!-- Specialise Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                android:text="Action need to do"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                android:text="\n 1.practicing deep or guided breathing techniques, such as box breathing. \n \n 2. relaxing and trying to remain calm. \n\n 3. going for a walk, ideally away from an urban environment. \n\n 4.taking a warm, relaxing bath or shower. \n\n  practicing stretching and relaxation exercises, such as yoga. \n\n 5.performing vagal maneuvers.   "
+                android:textColor="#92959595"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+        <!-- History Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

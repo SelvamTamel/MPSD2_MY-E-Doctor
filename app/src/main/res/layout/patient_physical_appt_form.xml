@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Patient_physical_appt">
+
+    <!--Back Button-->
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:background="#FFFFFF"
+        app:srcCompat="@drawable/back_icon" />
+
+    <!-- Title Physical Appointment -->
+    <TextView
+        android:id="@+id/title_physicalApt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Physical Appointment"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_physicalApt"
+        android:layout_marginTop="60dp">
+
+        <RelativeLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:id="@+id/input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- Input Symptoms Part -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Briefly State your Symptoms"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/input_physicalApt_symptoms"
+                    android:layout_width="350dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/symptoms_box_input"
+                    android:gravity="top|start"
+                    android:hint="Example: Cough, Fever"
+                    android:padding="18dp"
+                    android:textSize="15sp" />
+
+                <!-- Symptoms Period Part -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:text="How long have you been having these symptoms?"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/input_physicalApt_symptomsPeriod"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="180dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="20dp"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <!-- Next Button -->
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="250dp"
+                android:layout_height="58dp"
+                android:layout_below="@id/input"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/blue"
+                android:text="Submit"
+                android:textAllCaps="false" />
+
+            <!-- Progress Bar -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="495dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

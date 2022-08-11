@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Patient_dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <!--Back Button-->
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:background="#FFFFFF"
+            app:srcCompat="@drawable/back_icon" />
+
+        <!-- Blood Pressure Button -->
+        <ImageView
+            android:id="@+id/logo_bloodPressure"
+            android:layout_width="234dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/blood_pressure_icon" />
+
+        <!-- Action to do -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                android:text="Action need to do"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                android:text="\n 1. Eat healthy foods \n\n 2. Decrease the salt in your diet. \n\n  3. Maintain a healthy weight. \n\n 4. Increase physical activity. \n \n 5. Limit alcohol. \n\n 6. Don't smoke. \n\n 7. Manage stress. \n\n 8. Monitor your blood pressure at home. "
+                android:textColor="#92959595"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- History Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"/>
+
+    </LinearLayout>
+
+</ScrollView>

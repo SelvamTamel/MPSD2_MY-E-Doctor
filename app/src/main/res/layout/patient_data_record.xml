@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Patient_data_record">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Back Button-->
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="36dp"
+            android:background="#FFFFFF"
+            app:srcCompat="@drawable/back_icon" />
+
+        <!--Form to record classPatient data -->
+        <!--Title Health Data Form-->
+        <TextView
+            android:id="@+id/title_dataForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="43dp"
+            android:text="@string/title_data_record"
+            android:textAlignment="center"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <!-- Today's Date -->
+        <LinearLayout
+            android:id="@+id/date_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/title_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today:"
+                android:textAlignment="textStart"
+                android:textSize="16sp"
+                android:textStyle="" />
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:text="@string/txt_date"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Warning Text -->
+        <TextView
+            android:id="@+id/txt_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date_linear_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="*You can only save data once per day."
+            android:textSize="13sp"
+            android:textStyle="italic" />
+
+        <GridLayout
+            android:id="@+id/grid_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            android:layout_below="@+id/txt_warning"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:columnCount="2"
+            android:rowCount="2">
+
+            <!--Blood Sugar-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--Blood Sugar Title-->
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="68dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/blood_sugar_icon" />
+
+                    <!--Blood Sugar Input-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/input_bloodSugar"
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_mg"
+                            android:textColor="#996C6565"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/report_logo_sugarLevel"
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:gravity="start"
+                            android:src="@drawable/report_logo"
+                            android:visibility="invisible" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/analysis_logo_sugarLevel"
+                        android:layout_width="91dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:src="@drawable/danger_icon_blood_sugar"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="68dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/design_below_blood_sugar" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Heart Rate-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="68dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/heart_rate_icon" />
+
+                    <!--Heart Rate Input-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/input_heartRate"
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:inputType="textPersonName" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_bpm"
+                            android:textColor="#996C6565"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/report_logo_heartRate"
+                            android:layout_width="28dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:src="@drawable/report_logo"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/analysis_logo_heartRate"
+                        android:layout_width="91dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/danger_icon_blood_sugar" />
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="68dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/design_below_heart_rate" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!--Bloood Pressure-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="68dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/blood_pressure_icon" />
+
+                    <!--Blood Pressure Input-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/input_bloodPressure"
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:inputType="textPersonName" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_mmhg"
+                            android:textColor="#996C6565"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/report_logo_bloodPressure"
+                            android:layout_width="28dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:src="@drawable/report_logo"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/analysis_logo_bloodPressure"
+                        android:layout_width="91dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/danger_icon_blood_sugar" />
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="68dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/design_below_blood_pressure" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!--Cholesterol-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="68dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/cholesterol_icon" />
+
+                    <!--Cholesterol Input-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/input_cholesterol"
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:inputType="textPersonName" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_mgdl"
+                            android:textColor="#996C6565"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/report_logo_cholesterol"
+                            android:layout_width="28dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:src="@drawable/report_logo"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/analysis_logo_cholesterol"
+                        android:layout_width="91dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/danger_icon_blood_sugar" />
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="68dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/design_below_cholesterol" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+        <!--Save Data Button-->
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/grid_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="18dp"
+            android:backgroundTint="@color/blue"
+            android:text="@string/btn_save" />
+
+    </RelativeLayout>
+</ScrollView>
+

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Patient_dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <!--Back Button-->
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:background="#FFFFFF"
+            app:srcCompat="@drawable/back_icon" />
+
+        <!-- Blood Sugar Logo -->
+        <ImageView
+            android:id="@+id/logo_bloodSugar"
+            android:layout_width="234dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/blood_sugar_icon" />
+
+        <!-- Action to do -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                android:text="Action need to do"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                android:text="\n When your blood sugar level gets too high — known as hyperglycemia or high blood glucose — the quickest way to reduce it is to take fast-acting insulin. Exercising is another fast, effective way to lower blood sugar. \n\n Take your insulin as prescribed
+High blood sugar occurs when your body has too little insulin, or your body can’t use insulin properly. Administering insulin can bring your blood sugar levels down.
+
+Talk to your doctor about how much rapid-acting insulin you should administer when your blood sugar is high.
+
+You may want to check your blood sugar about 15–30 minutes after taking insulin to make sure your blood sugar is going down and that it’s not dropping too low."
+                android:textColor="#92959595"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- History Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"/>
+    </LinearLayout>
+
+</ScrollView>

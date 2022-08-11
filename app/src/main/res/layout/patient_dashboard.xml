@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Patient_dashboard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_grey_2">
+
+        <!-- Background Blue -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/background_blue_box" />
+
+        <!-- Button White Behind Icons -->
+        <TextView
+            android:layout_width="390dp"
+            android:layout_height="210dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:elevation="5dp"
+            android:background="@drawable/background_white_box" />
+
+        <!-- Background white behind Our Doctors -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="388dp"
+            android:background="@drawable/background_white_box"
+            android:elevation="5dp" />
+
+    <!-- Profile Image -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/patient_dashboard_profile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/profile"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1dp" />
+
+        <!-- Title Patient Dashboard -->
+        <TextView
+            android:id="@+id/name_patient_dashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="45dp"
+            android:layout_toEndOf="@+id/patient_dashboard_profile"
+            android:text="@string/title_patient_dashboard"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    <!-- SOS Button -->
+        <ImageButton
+            android:id="@+id/btn_sos"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="22dp"
+            android:background="@color/blue_app"
+            android:visibility="visible"
+            app:srcCompat="@drawable/sos" />
+
+    <!-- Health Education Button -->
+        <ImageButton
+            android:id="@+id/btn_healthEducation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_sos"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="73dp"
+            android:layout_marginEnd="330dp"
+            android:background="#FFFFFF"
+            android:elevation="5dp"
+            app:srcCompat="@drawable/education_logo" />
+
+    <!-- Scroller view reference and component-->
+    <!--https://www.youtube.com/watch?v=f1nC8HcbMOw-->
+    <!-- Scan QR Button -->
+        <ImageButton
+            android:id="@+id/btn_scanQR"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_sos"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="73dp"
+            android:layout_marginEnd="230dp"
+            android:background="#FFFFFF"
+            android:elevation="5dp"
+            android:onClick="onClick"
+            app:srcCompat="@drawable/qrcode_icon" />
+
+    <!-- Professionals Button -->
+        <ImageButton
+            android:id="@+id/btn_our_doctors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_sos"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="73dp"
+            android:layout_marginEnd="125dp"
+            android:background="#FFFFFF"
+            android:elevation="5dp"
+            app:srcCompat="@drawable/our_doctors_icon" />
+
+    <!-- Reminder Button -->
+        <ImageButton
+            android:id="@+id/btn_patient_my_appt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_sos"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="73dp"
+            android:layout_marginEnd="13dp"
+            android:background="#FFFFFF"
+            android:elevation="5dp"
+            app:srcCompat="@drawable/my_appointment_logo" />
+
+        <ImageButton
+            android:id="@+id/btn_reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_sos"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="175dp"
+            android:layout_marginEnd="330dp"
+            android:background="#FFFFFF"
+            android:elevation="5dp"
+            app:srcCompat="@drawable/reminder_logo" />
+
+    <!-- Consultation Button -->
+
+    <!-- Health Data Track Button -->
+
+        <ImageButton
+            android:id="@+id/btn_consultation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_sos"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="173dp"
+            android:layout_marginEnd="230dp"
+            android:background="#FFFFFF"
+            android:elevation="5dp"
+            app:srcCompat="@drawable/ebookinglogo" />
+
+        <ImageButton
+            android:id="@+id/btn_healthData_track"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_sos"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="173dp"
+            android:layout_marginEnd="125dp"
+            android:background="#FFFFFF"
+            android:elevation="5dp"
+            app:srcCompat="@drawable/data_tracker" />
+
+    <!-- Health Data Record Button -->
+        <ImageButton
+            android:id="@+id/btn_dataRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_sos"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="173dp"
+            android:layout_marginEnd="25dp"
+            android:background="#FFFFFF"
+            android:elevation="5dp"
+            app:srcCompat="@drawable/data_record_icon" />
+
+    <!-- Title Our Doctors -->
+        <TextView
+            android:id="@+id/title_our_doctors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_reminder"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/title_our_doctors"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+    <!-- Our Doctors Part -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/patient_dashboard_ourDoctors"
+            android:layout_width="380dp"
+            android:layout_height="415dp"
+            android:layout_above="@+id/navigationbar"
+            android:layout_below="@+id/title_our_doctors"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:elevation="5dp"
+            android:scrollbarSize="2dp"
+            android:scrollbars="vertical" />
+
+        <!-- Navigation Bar -->
+        <TextView
+            android:id="@+id/navigationbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/background_white_box_noradius"
+            android:elevation="6dp" />
+
+        <!-- Navigation Bar - Reminder -->
+        <TextView
+            android:id="@+id/btn_nav_reminder"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="-5dp"
+            android:background="@drawable/reminder_navigation_icon"
+            android:elevation="8dp" />
+
+        <!-- Navigation Bar - Data Record -->
+        <TextView
+            android:id="@+id/btn_nav_dataRecord"
+            android:layout_width="32dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/data_record"
+            android:elevation="8dp" />
+
+        <!-- Navigation Bar - Education -->
+        <TextView
+            android:id="@+id/btn_nav_education"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="280dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/education_nav"
+            android:elevation="8dp" />
+
+        <!-- Navigation Bar - Profile -->
+        <TextView
+            android:id="@+id/btn_nav_profile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="345dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/person_gray"
+            android:elevation="8dp" />
+
+        <!-- Bottom Scan QR Code Button -->
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="368dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background_blue_circle"
+            android:elevation="7dp" />
+
+
+        <TextView
+            android:id="@+id/btn_scan_qr_code"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/tab_qrcode_logo"
+            android:elevation="7dp" />
+
+
+        <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar_patient_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="495dp"
+        android:elevation="5dp"
+        android:visibility="gone" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Patient_profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:background="@drawable/background_blue_box" />
+
+        <!--Back Button-->
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="36dp"
+            android:background="@color/blue_app"
+            app:srcCompat="@drawable/back_icon" />
+
+        <!--Profile Image-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/patient_profileImg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@+string/app_icon"
+            android:src="@drawable/profile"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1dp" />
+
+        <!--Profile Class_Doctor Name-->
+        <TextView
+            android:id="@+id/patient_profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="165dp"
+            android:layout_marginTop="55dp"
+            android:text="Patient Name"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="28sp" />
+
+        <!--Edit Profile Text-->
+        <TextView
+            android:id="@+id/patient_editProfileImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="120dp"
+            android:text="Edit Profile Image"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <!-- Email Part -->
+        <TextView
+            android:id="@+id/title_patientEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="220dp"
+            android:text="Email :"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_patientEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="220dp"
+            android:layout_toRightOf="@id/title_patientEmail"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <!-- Phone Number Part -->
+        <TextView
+            android:id="@+id/title_patientPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_patientEmail"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:text="Phone Number :"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_patientPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_patientEmail"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@id/title_patientPhone"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <!-- Gender Part-->
+        <TextView
+            android:id="@+id/title_patientGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_patientPhone"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:text="Gender :"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_patientGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_patientPhone"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@id/title_patientGender"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <!-- D.O.B Part -->
+        <TextView
+            android:id="@+id/title_patientDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_patientGender"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:text="Date of Birth :"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_patientDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_patientGender"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@id/title_patientDOB"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="500dp"
+            android:orientation="horizontal">
+
+            <!-- Sign Out Button -->
+            <Button
+                android:id="@+id/btn_patient_update"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="@color/blue"
+                android:text="@string/btn_update"
+                android:textAllCaps="false" />
+
+            <!-- Save Button -->
+            <Button
+                android:id="@+id/btn_patient_signOut"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:backgroundTint="#1C7FCC"
+                android:text="@string/btn_sign_out"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

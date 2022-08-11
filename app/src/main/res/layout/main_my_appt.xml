@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Doctor_my_appt">
+
+    <!--Back Button-->
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:background="#FFFFFF"
+        app:srcCompat="@drawable/back_icon" />
+
+    <!-- Title Our Doctors -->
+    <TextView
+        android:id="@+id/title_my_appt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="My Appointments"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- No Booking Text View Indicator -->
+    <TextView
+        android:id="@+id/tv_doctor_no_appt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"/>
+
+    <!-- All Appointment List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/doctor_my_appt_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_my_appt"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="25dp"
+        android:padding="10dp" />
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar_doctor_my_appt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="650dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

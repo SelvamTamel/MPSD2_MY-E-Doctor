@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Doctor_signup_1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Back Button-->
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:background="#FFFFFF"
+            app:srcCompat="@drawable/back_icon" />
+
+        <!-- App Icon Part -->
+        <ImageView
+            android:id="@+id/appIcon"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@+string/app_icon"
+            app:srcCompat="@drawable/main_log" />
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appIcon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/app_name"
+            android:textColor="#015C92"
+            android:textSize="25sp" />
+
+        <!-- Upload Verification Documents Part -->
+        <TextView
+            android:id="@+id/title_upload_verify_doc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/app_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/title_upload_verify_doc"
+            android:textColor="@color/light_grey"
+            android:textSize="18sp" />
+
+        <!-- Specialise Part -->
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/title_upload_verify_doc"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/specialization" />
+
+        <TextView
+            android:id="@+id/title_specialise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_upload_verify_doc"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/title_specialise"
+            android:textColor="@color/light_grey"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/input_specialise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_specialise"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="30dp"
+            android:ems="20"
+            android:hint="@string/hint_specialise" />
+
+        <!-- Medical License Part -->
+        <TextView
+            android:id="@+id/title_medical_license"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_specialise"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/title_medical_license"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:translationZ="90dp" />
+
+        <TextView
+            android:id="@+id/uploadTracker_medical_license"
+            android:layout_width="160dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/title_medical_license"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="3dp"
+            android:hint="@string/uploadCount_medicalLicense"
+            android:textSize="12sp"
+            android:translationZ="90dp" />
+
+        <!-- Relevant Certificates Part -->
+        <TextView
+            android:id="@+id/title_relevant_certs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_medical_license"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="70dp"
+            android:text="@string/title_relevant_certs"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:translationZ="90dp" />
+
+        <TextView
+            android:id="@+id/uploadTracker_relevant_certs"
+            android:layout_width="160dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/title_relevant_certs"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="3dp"
+            android:hint="@string/uploadCount_relevantCerts"
+            android:textSize="12sp"
+            android:translationZ="90dp" />
+
+        <!-- Background Grey Boxes -->
+        <TextView
+            android:id="@+id/box_1"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/input_specialise"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/background_grey_box" />
+
+        <TextView
+            android:id="@+id/box_2"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/box_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/background_grey_box" />
+
+
+        <!-- File Icon -->
+        <ImageView
+            android:id="@+id/file_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/input_specialise"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="55dp"
+            app:srcCompat="@drawable/license" />
+
+        <!-- Add File Icon -->
+        <ImageView
+            android:id="@+id/file_icon1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/file_icon"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="52dp"
+            app:srcCompat="@drawable/certificate" />
+
+        <ImageButton
+            android:id="@+id/btn_add_medical_license"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/input_specialise"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="60dp"
+            app:srcCompat="@drawable/icon_upload_file" />
+
+        <ImageButton
+            android:id="@+id/btn_add_relevant_certs"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/input_specialise"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="140dp"
+            app:srcCompat="@drawable/icon_upload_file" />
+
+        <!-- Delete File Icon -->
+        <ImageButton
+            android:id="@+id/btn_dlt_medical_license"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/input_specialise"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="60dp"
+            app:srcCompat="@drawable/icon_dlt_file" />
+
+        <ImageButton
+            android:id="@+id/btn_dlt_relevant_certs"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/input_specialise"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="140dp"
+            app:srcCompat="@drawable/icon_dlt_file" />
+
+
+        <!-- Documents Consent -->
+        <TextView
+            android:id="@+id/txt_consent"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/box_2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/txt_consent"
+            android:textAlignment="center"
+            android:textColor="@color/light_grey"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_consent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/box_2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="50dp"
+            android:checked="false"
+            android:padding="5dp" />
+
+
+        <!-- Complete Registration Button -->
+        <Button
+            android:id="@+id/btn_complete_register"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_below="@id/txt_consent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="28dp"
+            android:backgroundTint="@color/blue"
+            android:text="@string/btn_complete_registration"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <!-- Already Have Account? -->
+        <TextView
+            android:id="@+id/txt_ald_have_acc_1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_complete_register"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/txt_ald_have_acc"
+            android:textAllCaps="false"
+            android:textColor="@color/light_grey"
+            android:textSize="15sp" />
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="495dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</ScrollView>

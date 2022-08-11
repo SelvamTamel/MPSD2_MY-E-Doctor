@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myedoctor">
+
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="andriod.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission
+        android:name="android.permission.INSTALL_PACKAGES"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission
+        android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyEDoctor"
+        tools:targetApi="31">
+        <activity
+            android:name=".Patient_reminder_main"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor_physical_appt"
+            android:exported="false" />
+
+        <receiver android:name=".Alarm_Receiver" />
+
+        <activity
+            android:name=".Patient_reminder"
+            android:exported="false" />
+        <activity
+            android:name=".Main_my_appt_physical_info"
+            android:exported="false" />
+        <activity
+            android:name=".Patient_my_appt_info"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor_physical_appt_info"
+            android:exported="false" />
+        <activity
+            android:name=".Patient_my_appt"
+            android:exported="false" />
+
+        <service
+            android:name="org.jitsi.meet.sdk.ConnectionService"
+            android:exported="false" />
+
+        <activity
+            android:name=".Main_my_appt_virtual_info"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor_my_appt"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor_virtual_appt_info"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor_virtual_appt"
+            android:exported="false" />
+        <activity
+            android:name=".Patient_physical_appt"
+            android:exported="false" />
+        <activity
+            android:name=".Patient_virtual_appt_2"
+            android:exported="false" />
+        <activity
+            android:name=".Patient_signup_2"
+            android:exported="false" />
+        <activity
+            android:name=".Patient_signup_1"
+            android:exported="false" />
+        <activity
+            android:name=".Patient_profile"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor_dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor_profile"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor_signup_2"
+            android:exported="false" />
+        <activity
+            android:name=".Main_ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".Patient_signin"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor_signup_1"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor_signin"
+            android:exported="false" />
+        <activity
+            android:name=".Patient_dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Patient_bloodPressure_analysis_report"
+            android:exported="false" />
+        <activity
+            android:name=".Patient_bloodSugar_analysis_report"
+            android:exported="false" />
+        <activity
+            android:name=".Patient_cholesterol_analysis_report"
+            android:exported="false" />
+        <activity
+            android:name=".Patient_data_record"
+            android:exported="false" />
+        <activity
+            android:name=".Patient_data_tracker"
+            android:exported="false" />
+        <activity
+            android:name=".Patient_health_edu"
+            android:exported="false" />
+        <activity
+            android:name=".Patient_virtual_appt_1"
+            android:exported="false" />
+        <activity
+            android:name=".Patient_health_edu_info"
+            android:exported="false" />
+        <activity
+            android:name=".Patient_our_doctors"
+            android:exported="false" />
+        <activity
+            android:name=".Patient_our_doctors_info"
+            android:exported="false" />
+        <activity
+            android:name=".Patient_heartRate_analysis_report"
+            android:exported="false" />
+        <activity
+            android:name=".Patient_qrcode_scanner"
+            android:exported="false" />
+        <activity
+            android:name=".Main_SignIn"
+            android:exported="false" />
+        <activity
+            android:name=".StartUp_Screen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

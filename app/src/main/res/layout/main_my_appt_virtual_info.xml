@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Main_my_appt_virtual_info">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--Back Button-->
+                <ImageButton
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
+                    android:background="#FFFFFF"
+                    app:srcCompat="@drawable/back_icon" />
+
+                <!-- Appointment Details -->
+                <TextView
+                    android:id="@+id/title_appointment_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:text="Appointment Details"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!-- Appointment Date -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/title_appointment_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Appointment Date: "
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_appointment_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <!-- Appointment Time -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/title_appointment_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Appointment Time: "
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_appointment_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+                <!-- Patient Name -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/title_patient_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Patient Name: "
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_patient_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <!-- Patient Gender -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/title_patient_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Patient Gender: "
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_patient_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+                <!-- Patient DOB -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/title_patient_dob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Patient DOB: "
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_patient_dob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <!-- Symptoms -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/title_symptoms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Symptoms: "
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_symptoms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <!-- Symptoms -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/title_symptoms_period"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Symptoms Period: "
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_symptoms_period"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <!-- Appointment ID -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/title_appt_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Appointment ID: "
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_appt_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <!-- Doctor In-Charge -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/title_doct_inCharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Doctor In Charge: "
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_doct_inCharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Instructions (Doctor) -->
+            <TextView
+                android:id="@+id/tv_instruction_doctor"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="80dp"
+                android:text="Button will turn to blue 5 minutes before appointment time. Join the cinsultation room and wait for Doctor patiently."
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:visibility="gone" />
+
+            <!-- Button Join (Doctor) -->
+            <Button
+                android:id="@+id/btn_join_doctor"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/linear_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/dark_grey"
+                android:clickable="false"
+                android:text="Join Consultation Room"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <!-- Instructions (Patient) -->
+            <TextView
+                android:id="@+id/tv_instruction_patient"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="80dp"
+                android:text="Button will turn to blue 5 minutes before appointment time. Join the cinsultation room and wait for Doctor patiently."
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:visibility="gone" />
+
+            <!-- Button Join (Patient) -->
+            <Button
+                android:id="@+id/btn_join_patient"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/linear_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/dark_grey"
+                android:clickable="false"
+                android:text="Join Consultation Room"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+            <!-- Button Finish Appointment (doctor) -->
+            <Button
+                android:id="@+id/btn_finish_appt"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/linear_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="108dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/blue"
+                android:text="Finish Appointment"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <!-- Button Confirm Appointment Done (patient) -->
+            <Button
+                android:id="@+id/btn_confirm_finish_appt"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/linear_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="108dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/blue"
+                android:text="Confirm Appointment Done"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <!-- Button Appointment Done (doctor & patient) -->
+            <Button
+                android:id="@+id/btn_appt_done"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/linear_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="108dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/dark_grey"
+                android:clickable="false"
+                android:text="Appointment Is Done"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <!-- Wait Patient to Confirm -->
+            <Button
+                android:id="@+id/btn_wait_patient_confirm"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/linear_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="108dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/light_grey"
+                android:clickable="false"
+                android:text="Waiting for patient to confirm"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <!-- Appointment Expired -->
+            <Button
+                android:id="@+id/btn_appt_expired"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/linear_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="108dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/dark_grey"
+                android:clickable="false"
+                android:text="Appointment Expired"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <!-- Appointment Declined -->
+            <Button
+                android:id="@+id/btn_appt_declined"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/linear_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="108dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/dark_grey"
+                android:clickable="false"
+                android:text="Appointment Declined"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="650dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

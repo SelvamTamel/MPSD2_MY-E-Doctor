@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main_SignIn">
+
+    <!-- Big Logo -->
+    <ImageView
+        android:id="@+id/appIcon"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@+string/app_icon"
+        app:srcCompat="@drawable/main_log" />
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="@string/app_name"
+        android:textColor="#015C92"
+        android:textSize="50sp" />
+
+    <!-- Create a free account -->
+    <TextView
+        android:id = "@+id/text_create_acc"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/app_name"
+        android:layout_marginTop = "10dp"
+        android:text = "@string/txt_create_acc"
+        android:textSize = "30sp" />
+
+    <!-- Patient Sign In Button -->
+    <Button
+        android:id="@+id/btn_patient_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_below="@id/text_create_acc"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#53A7D8"
+        android:shadowColor="#FFFFFF"
+        android:text="@string/btn_patient_signin"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:icon="@drawable/patient_logo"
+        app:iconSize="32dp"
+        app:iconTint="#015C92" />
+
+    <!-- Doctor Sign In Button -->
+    <Button
+        android:id="@+id/btn_doctor_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_below="@id/btn_patient_signin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="@color/white"
+        android:shadowColor="#000000"
+        android:text="@string/btn_doctor_signin"
+        android:textAllCaps="false"
+        android:textColor="#015C92"
+        app:icon="@drawable/doctor_logo"
+        app:iconSize="28dp"
+        app:iconTint="@color/blue" />
+
+</RelativeLayout>

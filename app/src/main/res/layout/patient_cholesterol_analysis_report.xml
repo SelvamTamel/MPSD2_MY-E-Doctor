@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Patient_dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <!--Back Button-->
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="36dp"
+            android:background="#FFFFFF"
+            app:srcCompat="@drawable/back_icon" />
+
+        <!-- Cholesterol Logo -->
+        <ImageView
+            android:id="@+id/logo_cholesterol"
+            android:layout_width="234dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/cholesterol_icon" />
+
+        <!-- Action to do -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                android:text="Action need to do"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                android:text="\n - Reduce saturated fats. Saturated fats, found primarily in red meat and full-fat dairy products, raise your total cholesterol. Decreasing your consumption of saturated fats can reduce your low-density lipoprotein (LDL) cholesterol — the  cholesterol. \n\n - Eat foods rich in omega-3 fatty acids. Omega-3 fatty acids don't affect LDL cholesterol. But they have other heart-healthy benefits, including reducing blood pressure. Foods with omega-3 fatty acids include salmon, mackerel, herring, walnuts and flaxseeds.\n\n - Increase soluble fiber. Soluble fiber can reduce the absorption of cholesterol into your bloodstream. Soluble fiber is found in such foods as oatmeal, kidney beans, Brussels sprouts, apples and pears. "
+                android:textColor="#92959595"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <!-- History Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"/>
+    </LinearLayout>
+
+</ScrollView>

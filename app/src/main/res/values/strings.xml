@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">My E Doctor</string>
+
+    <!--Class_Doctor Strings-->
+    <!-- Texts -->
+    <string name="txt_create_acc">Create a Free Account</string>
+    <string name="txt_forgot_pass">Forgot Password?</string>
+    <string name="txt_register">Sign Up</string>
+    <string name="txt_ald_have_acc">Already have an account? Sign In</string>
+    <string name="txt_consent">I accept that my information provided is true and not false and i am a licensed practitioner in the medical field</string>
+    <string name="txt_instruction_reset_pass">Enter your email to reset password. An email to reset password will be sent to your email account.</string>
+
+
+    <!-- Titles -->
+    <string name="title_email">Email</string>
+    <string name="title_password">Password</string>
+    <string name="title_name">Name</string>
+    <string name="title_phone_number">Phone Number</string>
+    <string name="title_upload_verify_doc">Upload Verification Documents</string>
+    <string name="title_medical_license">Medical License</string>
+    <string name="title_relevant_certs">Relevant Certificates</string>
+    <string name="title_specialise">Specialise</string>
+
+
+    <!-- Hints -->
+    <string name="hint_email">example@gmail.com</string>
+    <string name="hint_password">Enter Password</string>
+    <string name="hint_name">Enter your Full Name</string>
+    <string name="hint_phone_number">Enter your Phone Number</string>
+    <string name="uploadCount_medicalLicense">No File is selected</string>
+    <string name="uploadCount_relevantCerts">No File is selected</string>
+    <string name="hint_dob">Select your date of birth</string>
+    <string name="hint_address">Enter your address</string>
+    <string name="hint_specialise">Enter your specialisation</string>
+
+    <!-- Buttons -->
+    <string name="btn_patient_signin">Patient</string>
+    <string name="btn_doctor_signin">Doctor</string>
+    <string name="btn_sign_in">Sign In</string>
+    <string name="btn_sign_out">Sign Out</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_complete_registration">Complete Registration</string>
+    <string name="btn_reset_pass">Reset Password</string>
+    <string name="btn_update">Update</string>
+
+    <!-- Others -->
+
+
+    <!-- Spinner / Drop Down Lists -->
+    <!--End of Class_Doctor Strings-->
+
+
+    <!--Class_Patient Strings-->
+    <!-- Texts -->
+    <string name="txt_date">Sample Date</string>
+    <string name="txt_mg">mg</string>
+    <string name="txt_bpm">bpm</string>
+    <string name="txt_mmhg">mmhg</string>
+    <string name="txt_mgdl">mg/dl</string>
+
+    <!-- Titles -->
+    <string name="title_data_record">Health Data Form</string>
+    <string name="title_data_analysis">Health Data Analysis</string>
+    <string name="title_setup_profile">Set up your profile</string>
+    <string name="title_gender">Gender</string>
+    <string name="title_dob">Date of Birth</string>
+    <string name="title_address">Address</string>
+    <string name="title_our_doctors">Our Doctors</string>
+    <string name="title_patient_dashboard">Patient Dashboard</string>
+    <string name="title_action_need_to_do">Action need to do</string>
+    <string name="title_explore_health_edu">Explore Health Education</string>
+    <string name="title_virtual_appointment">Virtual Appointment</string>
+
+    <!--Hints-->
+    <string name="hint_select_date">Select Date</string>
+
+    <!-- Buttons -->
+    <string name="btn_save">Save</string>
+
+    <!-- Others -->
+
+    <!--End of Class_Patient Strings-->
+
+</resources>

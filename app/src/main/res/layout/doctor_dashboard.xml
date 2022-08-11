@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey_2"
+    tools:context=".Doctor_dashboard">
+
+    <!-- Background Blue -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/background_blue_box" />
+
+    <!-- Background White Nehind Icons -->
+    <TextView
+        android:layout_width="390dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/background_white_box"
+        android:elevation="5dp" />
+
+    <!-- Background behind Physical Appointment Recycle View -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="338dp"
+        android:elevation="5dp"
+        android:background="@drawable/background_white_box" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--Profile Image-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/doctor_dashboard_profile"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@+string/app_icon"
+            android:src="@drawable/profile"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1dp" />
+
+        <!-- Doctor Name -->
+        <TextView
+            android:id="@+id/tv_doctor_dashboard_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Doctor Name"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Button Virtual Appt -->
+    <ImageButton
+        android:id="@+id/btn_virtual_appt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="280dp"
+        android:background="#FFFFFF"
+        android:elevation="5dp"
+        app:srcCompat="@drawable/virtual_appointment_logo" />
+
+    <!-- Button My Appt -->
+    <ImageButton
+        android:id="@+id/btn_my_appt"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="25dp"
+        android:background="#FFFFFF"
+        android:elevation="5dp"
+        app:srcCompat="@drawable/my_appointment_logo" />
+
+    <!-- Button Physical Appt -->
+    <ImageButton
+        android:id="@+id/btn_physical_appt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="147dp"
+        android:background="#FFFFFF"
+        android:elevation="5dp"
+        app:srcCompat="@drawable/physical_appointment_logo" />
+
+    <!-- Title Physical Appt -->
+    <TextView
+        android:id="@+id/title_physicalAppt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="300dp"
+        android:text="Physical Appointment"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Physical Appointment Part Recycler View -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/doctor_dashboard_physicalAppt"
+        android:layout_width="380dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_physicalAppt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="5dp"
+        android:scrollbarSize="8dp"
+        android:scrollbars="vertical" />
+
+    <!-- No Appointment Yet Text Indicator-->
+    <TextView
+        android:id="@+id/tv_no_appt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_physicalAppt"
+        android:layout_centerInParent="true"
+        android:elevation="5dp"
+        android:layout_marginTop="100dp"
+        android:textSize="15sp" />
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="495dp"
+        android:visibility="gone" />
+
+</RelativeLayout>
