@@ -34,6 +34,7 @@ There are a few important basic features that are implemented into this project:
 - Login
 - Update profile
 - Confirm appointments
+- Join Virtual Meeting 
 
 ### Patients:
 - Register
@@ -49,7 +50,7 @@ There are a few important basic features that are implemented into this project:
 - SOS (emergency call)
 
 
-2) To debug the app, create a new account of use existing user
+2) To debug the app or create a new account of use existing user
 ### Patients:
 - Patient : liawyikai.lyk@gmail.com 
 - Password : 123456
